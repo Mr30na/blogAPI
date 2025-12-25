@@ -13,7 +13,7 @@ export default async function updateValidator(id, body) {
       const updateResult = await Blog.findByIdAndUpdate(id, updatedDocument, {
         new: true,
       });
-      updateResult === null ? reject(ERROR.NOT_FOUND): resolve(updateResult);
+      updateResult === null ?  reject(ERROR.NOT_FOUND): resolve(updateResult);
     } catch (err) {
       reject(err);
     }

@@ -39,11 +39,11 @@ indexRouter.delete("/:id",async(req,res)=>{
   }catch(err){
     switch (err) {
       case 2000:
-        res.status(404).json({msg:"blog not found",data:null})
+        res.status(404).json({msg:"blog not found"})
         break;
     
       default:
-        res.status(500).json({msg:"unexpected error",data:null})
+        res.status(500).json({msg:"unexpected error"})
         break;
     }
   }
