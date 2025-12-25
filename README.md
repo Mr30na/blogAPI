@@ -1,6 +1,7 @@
 # Blog REST api
 
 This project is a simple REST API for a blog application with basic CRUD operations.
+(project details:https://roadmap.sh/projects/blogging-platform-api)
 
 ## requirements
 
